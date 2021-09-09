@@ -12,7 +12,7 @@ export const Button: FC<ButtonProps> = (props) => {
   const { className, children, ...otherProps } = props;
   return (
     <button
-      className={classnames(styles.Button, className)}
+      className={classnames(Button.displayName, styles.Button, className)}
       data-testid="Button"
       type="button"
       {...otherProps}

@@ -13,5 +13,5 @@ export type <%= Name %>Props = {} & OuterProps
 
 export const <%= Name %>: FC<<%= Name %>Props> = (props) => {
   const { className, children, ...otherProps } = props;
-  return <div className={classnames(styles.<%= Name %>, className)} data-testid="<%= name %>" {...otherProps}>{children}</div>;
+  return <div className={classnames(<%= Name %>.displayName, styles.<%= Name %>, className)} data-testid="<%= name %>" {...otherProps}>{children}</div>;
 };

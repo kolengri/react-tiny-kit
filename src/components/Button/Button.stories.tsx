@@ -1,11 +1,13 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react/types-6-0';
 
-import { ButtonProps as Props, Button as Component } from './Button';
+import { Meta, Story } from '@storybook/react';
+
+import { Button as Component, ButtonProps as Props } from './Button';
 
 const ComponentStory: Meta<Props> = {
-  title: 'Button',
+  argTypes: { onClick: { action: 'clicked' } },
   component: Component,
+  title: 'Button',
 };
 
 /**
@@ -20,6 +22,6 @@ const BaseExampleTemplate: Story<Props> = (args) => (
 
 export const BaseExample = BaseExampleTemplate.bind({});
 
-BaseExample.args = {};
+BaseExample.args = { children: 'Button' };
 
 export default ComponentStory;

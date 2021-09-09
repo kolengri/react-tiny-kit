@@ -33,6 +33,8 @@ module.exports = {
   ],
   rules: {
     '@typescript-eslint/no-use-before-define': ['error'],
+    'import/extensions': 'off',
+    'import/no-extraneous-dependencies': 'off',
     // note you must disable the base rule as it can report incorrect errors
     'no-use-before-define': 'off',
 
@@ -71,5 +73,12 @@ module.exports = {
     ],
     'sort-keys': 'off',
     'sort-keys-fix/sort-keys-fix': 'warn',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 };
