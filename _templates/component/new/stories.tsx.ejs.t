@@ -2,6 +2,7 @@
 to: src/components/<%= name %>/<%= Name %>.stories.tsx
 ---
 import React from 'react';
+
 import { Meta, Story } from '@storybook/react';
 
 import { <%= Name %>Props as Props, <%= Name %> as Component } from './<%= Name %>';

@@ -3,7 +3,7 @@ to: src/components/<%= name %>/<%= Name %>.tsx
 ---
 import React, { FC } from 'react';
 
-import classnames from 'classnames'
+import classnames from 'classnames';
 
 import styles from './<%= Name %>.module.css';
 
