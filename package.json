@@ -1,14 +1,20 @@
 {
+  "name": "reactprint",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "author": "kolengri <kolenko@me.com>",
   "files": [
     "dist",
     "src"
   ],
   "engines": {
     "node": ">=10"
+  },
+  "repository": "https://github.com/kolengri/reactprint",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -35,8 +41,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "reactprint",
-  "author": "kolengri",
   "module": "dist/reactprint.esm.js",
   "size-limit": [
     {
