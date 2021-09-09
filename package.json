@@ -17,7 +17,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "fix": "yarn prettier & yarn lint --fix",
     "prepare": "tsdx build",
     "size": "size-limit",
